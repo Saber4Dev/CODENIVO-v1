@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+
+    <title>Cart & Checkout</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/CustomCSS/confirmations.css">
+
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">Code<em>Nivo</em></a>
+                        <!-- ***** Logo End ***** -->
+
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="checkout.html" class="active">Checkout</a></li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">About</a>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="about.html">About Us</a>
+                                    <a class="dropdown-item" href="blog.html">Blog</a>
+                                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                                    <a class="dropdown-item" href="terms.html">Terms</a>
+                                    <a class="dropdown-item" href="contact.html">Contact us</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" id="cart" data-toggle="modal" data-target="#cartModal">
+                                    <i class="fa fa-shopping-cart"></i>Cart<span class="badge">1</span></a>
+                            </li>
+                            <li class="searchbar">
+                                <input class="search_input" type="text" name="" placeholder="Search...">
+                                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--end container -->
+            </div>
+        </div>
+
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h7 class="modal-title" id="exampleModalLabel">
+                        Your Shopping Cart
+                    </h7>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-image">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-25">
+                                    <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/vans.png"
+                                        class="img-fluid img-thumbnail" alt="Sheep">
+                                </td>
+                                <td>Vans Sk8-Hi MTE Shoes</td>
+                                <td>89$</td>
+                                <td class="qty"><input type="number" class="form-control" id="input1" value="2"></td>
+                                <td>178$</td>
+                                <td>
+                                    <a href="#" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-end">
+                        <h5>Total: <span class="price text-success">89$</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer border-top-0 d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Header Area End ***** -->
+
+    <section class="section section-bg" id="call-to-action"
+        style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <br>
+                        <br>
+                        <h2>Easy <em>Checkout</em></h2>
+                        <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <br>
+            <br>
+            <!--================ confirmation part start =================-->
+            <section class="section confirmation_part" id="our-classes">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="confirmation_tittle">
+                                <span>Thank you. Your order has been received.</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-lx-4">
+                            <div class="single_confirmation_details">
+                                <h4>order info</h4>
+                                <ul>
+                                    <li>
+                                        <p>order number</p><span>: 60235</span>
+                                    </li>
+                                    <li>
+                                        <p>data</p><span>: Oct 03, 2017</span>
+                                    </li>
+                                    <li>
+                                        <p>total</p><span>: USD 2210</span>
+                                    </li>
+                                    <li>
+                                        <p>mayment methord</p><span>: Check payments</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-lx-4">
+                            <div class="single_confirmation_details">
+                                <h4>Billing Address</h4>
+                                <ul>
+                                    <li>
+                                        <p>Street</p><span>: 56/8</span>
+                                    </li>
+                                    <li>
+                                        <p>city</p><span>: Los Angeles</span>
+                                    </li>
+                                    <li>
+                                        <p>country</p><span>: United States</span>
+                                    </li>
+                                    <li>
+                                        <p>postcode</p><span>: 36952</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-lx-4">
+                            <div class="single_confirmation_details">
+                                <h4>shipping Address</h4>
+                                <ul>
+                                    <li>
+                                        <p>Street</p><span>: 56/8</span>
+                                    </li>
+                                    <li>
+                                        <p>city</p><span>: Los Angeles</span>
+                                    </li>
+                                    <li>
+                                        <p>country</p><span>: United States</span>
+                                    </li>
+                                    <li>
+                                        <p>postcode</p><span>: 36952</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="order_details_iner">
+                                <h3>Order Details</h3>
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" colspan="2">Product</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="2"><span>Pixelstore fresh Blackberry</span></th>
+                                            <th>x02</th>
+                                            <th> <span>$720.00</span></th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2"><span>Pixelstore fresh Blackberry</span></th>
+                                            <th>x02</th>
+                                            <th> <span>$720.00</span></th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2"><span>Pixelstore fresh Blackberry</span></th>
+                                            <th>x02</th>
+                                            <th> <span>$720.00</span></th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="3">Subtotal</th>
+                                            <th> <span>$2160.00</span></th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="3">shipping</th>
+                                            <th><span>flat rate: $50.00</span></th>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th scope="col" colspan="3">Quantity</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--================ confirmation part end =================-->
+        </div>
+    </section>
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Copyright © 2021 CodeNivo
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/mixitup.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+/* My Custom CSS */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #eee;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.container {
+    padding: 10px;
+    height: 200px;
+    width: 350px;
+    background-color: blue;
+    border-radius: 10px;
+    clip-path: circle(8% at 92% 14%);
+    transition: all 0.7s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.container .info {
+    position: absolute;
+    top: 18px;
+    right: 19px;
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.7s
+}
+
+.container:hover {
+    clip-path: circle(75% at 50% 50%)
+}
+
+.container:hover .info {
+    display: none
+}
+
+.content h4 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 7px;
+    font-family: 'Source Sans Pro', sans-serif
+}
+
+.content span {
+    font-size: 13px;
+    color: #fff
+}
+
+.content ul {
+    list-style: none;
+    display: flex;
+    margin-top: 10px
+}
+
+.content ul li {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px
+}
+
+.content ul li i {
+    transition: all 0.5s
+}
+
+.content ul li:hover i {
+    transform: scale(2)
+}

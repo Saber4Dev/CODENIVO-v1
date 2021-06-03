@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+
+    <title>Products</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">Code<em>Nivo</em></a>
+                        <!-- ***** Logo End ***** -->
+
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html" class="active">Products</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">About</a>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="about.html">About Us</a>
+                                    <a class="dropdown-item" href="blog.html">Blog</a>
+                                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                                    <a class="dropdown-item" href="terms.html">Terms</a>
+                                    <a class="dropdown-item" href="contact.html">Contact us</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" id="cart" data-toggle="modal" data-target="#cartModal">
+                                    <i class="fa fa-shopping-cart"></i>Cart<span class="badge">1</span></a>
+                            </li>
+                            <li class="searchbar">
+                                <input class="search_input" type="text" name="" placeholder="Search...">
+                                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--end container -->
+            </div>
+        </div>
+
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h7 class="modal-title" id="exampleModalLabel">
+                        Your Shopping Cart
+                    </h7>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-image">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-25">
+                                    <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/vans.png"
+                                        class="img-fluid img-thumbnail" alt="Sheep">
+                                </td>
+                                <td>Vans Sk8-Hi MTE Shoes</td>
+                                <td>89$</td>
+                                <td class="qty"><input type="number" class="form-control" id="input1" value="2"></td>
+                                <td>178$</td>
+                                <td>
+                                    <a href="#" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-end">
+                        <h5>Total: <span class="price text-success">89$</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer border-top-0 d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Modal Cart End ***** -->
+
+    <!-- ***** Call to Action Start ***** -->
+    <section class="section section-bg" id="call-to-action"
+        style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <br>
+                        <br>
+                        <h2>Our <em>Products</em></h2>
+                        <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Call to Action End ***** -->
+
+    <!-- ***** Fleet Starts ***** -->
+    <section class="section" id="trainers">
+        <div class="container">
+            <br>
+
+            <br>
+            <!-- Section 1 -->
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <a href="#">
+                                <img class="pic-1" src="assets/images/product-6-720x480.jpg">
+                                <img class=" pic-2" src="assets/images/product-6-720x480-p2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">New</span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Random Steam Key</a></h3>
+                            <div class="price">
+                                $8
+                                <span>$5</span>
+                            </div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <a href="#">
+                                <img class="pic-1" src="assets/images/product-5-720x480.jpg">
+                                <img class="pic-2"
+                                    src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-4.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Key Office 2016 Pro</a></h3>
+                            <div class="price">
+                                $8
+                            </div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <a href="#">
+                                <img class="pic-1" src="assets/images/product-4-720x480.jpg">
+                                <img class="pic-2"
+                                    src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-6.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">New</span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Key Windows 10 Pro</a></h3>
+                            <div class="price">
+                                $10
+                                <span>$5</span>
+                            </div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <a href="#">
+                                <img class="pic-1" src="assets/images/product-1-720x480.jpg">
+                                <img class="pic-2"
+                                    src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-8.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">New</span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Key Office 2019</a></h3>
+                            <div class="price">
+                                $10
+                                <span>$5</span>
+                            </div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!--
+                  <div class="col-lg-4">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img src="assets/images/product-4-720x480.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>
+                                <del><sup>$</sup>15.00</del> <sup>$</sup>17.00
+                            </span>
+
+                            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, libero, reprehenderit?
+                                Aliquam vel, voluptate placeat, porro nemo impedit reprehenderit eligendi.</p>
+
+                            <ul class="social-icons">
+                                <li><a href="product-details.html">+ Order</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+                -->
+            </div>
+            <br>
+            <!-- END SECTION 1-->
+            <br>
+            <!-- Section 2 -->
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <a href="#">
+                                <img class="pic-1" src="assets/images/product-2-720x480.jpg">
+                                <img class=" pic-2" src="assets/images/product-2-720x480-p2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">New</span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Netflix Standard Plan</a></h3>
+                            <div class="price">
+                                $8
+                                <span>$5</span>
+                            </div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <a href="#">
+                                <img class="pic-1" src="assets/images/spotify-1-720x480.jpg">
+                                <img class="pic-2" src="assets/images/spotify-2-720x480.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Spotify Subscription</a></h3>
+                            <div class="price">
+                                $8
+                            </div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <a href="#">
+                                <img class="pic-1" src="assets/images/product-4-720x480.jpg">
+                                <img class="pic-2"
+                                    src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-6.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">New</span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Key Windows 10 Pro</a></h3>
+                            <div class="price">
+                                $10
+                                <span>$5</span>
+                            </div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <a href="#">
+                                <img class="pic-1" src="assets/images/product-4-720x480.jpg">
+                                <img class="pic-2"
+                                    src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-8.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">New</span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                            <div class="price">
+                                $63.50
+                                <span>$75.00</span>
+                            </div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+            </div>
+            <br>
+            <!-- END SECTION 2-->
+            <br>
+            <!-- Section 3 -->
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <a href="#">
+                                <img class="pic-1" src="assets/images/product-6-720x480.jpg">
+                                <img class=" pic-2" src="assets/images/product-6-720x480-p2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">New</span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Random Steam Key</a></h3>
+                            <div class="price">
+                                $8
+                                <span>$5</span>
+                            </div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <a href="#">
+                                <img class="pic-1" src="assets/images/product-5-720x480.jpg">
+                                <img class="pic-2"
+                                    src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-4.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Key Office 2016 Pro</a></h3>
+                            <div class="price">
+                                $8
+                            </div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <a href="#">
+                                <img class="pic-1" src="assets/images/product-4-720x480.jpg">
+                                <img class="pic-2"
+                                    src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-6.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">New</span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Key Windows 10 Pro</a></h3>
+                            <div class="price">
+                                $10
+                                <span>$5</span>
+                            </div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid3">
+                        <div class="product-image3">
+                            <a href="#">
+                                <img class="pic-1" src="assets/images/product-4-720x480.jpg">
+                                <img class="pic-2"
+                                    src="http://bestjquery.com/tutorial/product-grid/demo4/images/img-8.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">New</span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Men's Blazer</a></h3>
+                            <div class="price">
+                                $63.50
+                                <span>$75.00</span>
+                            </div>
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+            </div>
+            <br>
+            <!-- END SECTION 3-->
+
+            <!--Pagniation-->
+            <nav>
+                <ul class="pagination pagination-lg justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </section>
+    <!-- ***** Fleet Ends ***** -->
+
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Copyright © 2020 CodeNivo
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/mixitup.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

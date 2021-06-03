@@ -1,0 +1,56 @@
+/************** confirmation part css **********************/
+.confirmation_tittle{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.single_confirmation_details{
+    background-color: darkgray;
+    padding: 35px 40px;
+    margin-bottom: 15px;
+    }
+
+.confirmation_part h4{
+    font-size: 18px;
+    font-weight: 500;
+    color: slateblue;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}   
+
+.confirmation_part  ul li p{
+        position: relative;
+        text-transform: capitalize;
+        padding-left: 55%;
+        margin-bottom: 3px;
+       
+        position: absolute;
+        left: 0;
+        top: 0;
+        line-height: 21px;
+
+}
+
+.order_details_iner{
+    margin-top: 50px;
+    background-color: darkgray;
+    padding: 30px 30px 15px;
+    text-transform: capitalize;
+}
+.order_details_iner h3{
+        font-size: 18px;
+    }
+.order_details_iner table thead th{
+       font-size: 16px;
+    }
+.order_details_iner thead{
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+.order_details_iner tfoot{
+        border-top: 1px solid;
+    }
+.order_details_iner th{
+        font-weight: 500;
+    }
+
